@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.3
+- use FF3 Vista-like places toolbar
+
 ### 1.0.2
 - (PM26) add download location styling
 
