@@ -5,6 +5,3 @@ skin	mozapps		phoenity-rebirth	chrome/mozapps/
 
 skin	os			phoenity-rebirth	chrome/os/winnt/		os=WINNT	
 skin	os			phoenity-rebirth	chrome/os/linux/		os=Linux
-
-skin 	appver		phoenity-rebirth 	chrome/appver/25/ appversion<=26.0.0b2
-skin 	appver		phoenity-rebirth 	chrome/appver/26/ appversion>26.0.0b2
