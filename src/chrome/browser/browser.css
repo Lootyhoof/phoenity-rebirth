@@ -96,6 +96,7 @@
 
 #main-window[tabsintitlebar] #TabsToolbar:not(:-moz-lwtheme) {
   box-shadow: none;
+  border-top: none;
 }
 
 #main-window[tabsintitlebar] .tabbrowser-tab:not(:-moz-lwtheme),
@@ -1770,7 +1771,7 @@ toolbar[mode="text"] #status4evar-download-button {
 #identity-box[open="true"],
 #identity-box:hover:active {
   background-position: 0 -120px;
-  -moz-box-shadow: 0 -1px 0 rgba(255,255,255,.2) inset;
+  box-shadow: 0 -1px 0 rgba(255,255,255,.2) inset;
 }
 
 #identity-box.verifiedDomain {
@@ -3519,6 +3520,7 @@ panel[dimmed="true"] {
   @media (-moz-os-version: windows-vista),
          (-moz-os-version: windows-win7) {
     /* Make the menu toolbar and tabs toolbar transparent in Aero+glass IIF tabs are on top and menu toolbar is autohidden */
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
       background: transparent;
@@ -3534,6 +3536,7 @@ panel[dimmed="true"] {
   @media (-moz-os-version: windows-win8),
          (-moz-os-version: windows-win10) {
     /* Make the menu toolbar and tabs toolbar transparent in Aero+glass IIF tabs are on top and menu toolbar is autohidden */
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
       background: transparent;
