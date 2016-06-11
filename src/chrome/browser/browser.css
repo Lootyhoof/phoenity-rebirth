@@ -86,12 +86,21 @@
 #navigator-toolbox > toolbar:not(#TabsToolbar):not(:-moz-lwtheme) {
   -moz-appearance: none;
   border-style: none;
+  background-color: rgb(225,230,246);
 }
 
-#navigator-toolbox:not(:-moz-lwtheme) {
+#main-window:not([tabsintitlebar]) #navigator-toolbox:not(:-moz-lwtheme) {
   background: url("chrome://global/skin/toolbar-bg.png") repeat-x;
-  background-color: rgb(225,230,246) !important;
   box-shadow: inset 0 -14px 14px -14px #ffffff;
+}
+
+#main-window[tabsintitlebar] #TabsToolbar:not(:-moz-lwtheme) {
+  box-shadow: none;
+}
+
+#main-window[tabsintitlebar] .tabbrowser-tab:not(:-moz-lwtheme),
+#main-window[tabsintitlebar] .tabs-newtab-button:not(:-moz-lwtheme) {
+  background-color: -moz-dialog;
 }
 
 #navigator-toolbox[tabsontop=false] {
@@ -3340,11 +3349,13 @@ panel[dimmed="true"] {
         
     #main-window[sizemode="maximized"][tabsontop=true] #tabbrowser-tabs {
       min-height: 28px;
+      margin-bottom: -1px;
+      padding-bottom: 0;
     }
 
     #main-window[sizemode=maximized] .titlebar-button {
       padding-top: 8px;
-      padding-bottom: 8px;
+      padding-bottom: 6px;
     }
 
     .titlebar-button > .toolbarbutton-icon {
