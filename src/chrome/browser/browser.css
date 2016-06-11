@@ -765,7 +765,7 @@ toolbar[mode="full"] .toolbarbutton-1 > .toolbarbutton-menubutton-button {
   list-style-image: url(chrome://browser/skin/tabview/tabview.png);
 }
 
-#tabview-button:-moz-lwtheme-brighttext {
+toolbar[brighttext] #tabview-button {
   list-style-image: url(chrome://browser/skin/tabview/tabview-inverted.png);
 }
 
@@ -3534,7 +3534,6 @@ panel[dimmed="true"] {
   @media (-moz-os-version: windows-win8),
          (-moz-os-version: windows-win10) {
     /* Make the menu toolbar and tabs toolbar transparent in Aero+glass IIF tabs are on top and menu toolbar is autohidden */
-    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
     #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
       background: transparent;
