@@ -3359,63 +3359,58 @@ panel[dimmed="true"] {
 	#main-window[sizemode="maximized"] #titlebar-close {
       padding-right: 19px;
     }
-	
-    #titlebar-close {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-highlight);
-      background-color: hsl(0, 86%, 49%) !important; 
-      opacity: 0;
-    }
     
     #titlebar-close:hover {
-      opacity: 1;
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-white);
+      background-color: hsla(0, 86%, 49%, 1) !important; 
       transition: opacity linear 100ms;
     }
 
     #titlebar-close:hover:active {
-      background-color: hsl(0, 86%, 42%) !important; 
+      background-color: hsla(0, 86%, 49%, 0.6) !important; 
       transition: none;
     }
     
     /* light persona */
     
     #titlebar-min:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize-outline);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize-darktext);
     }
 
     #titlebar-max:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize-outline);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize-darktext);
     }
 
     #main-window[sizemode="maximized"]:-moz-lwtheme-darktext #titlebar-max:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore-outline);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore-darktext);
     }
 
     #titlebar-close:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-outline);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-darktext);
     }
     #titlebar-close:hover:-moz-lwtheme-darktext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-outline);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-darktext);
     }
         
     /* dark persona */
     
     #titlebar-min:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize-outline-inverted);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize-themes);
     }
 
     #titlebar-max:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize-outline-inverted);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#maximize-themes);
     }
 
     #main-window[sizemode="maximized"]:-moz-lwtheme-brighttext #titlebar-max:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore-outline-inverted);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#restore-themes);
     }
 
     #titlebar-close:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-outline-inverted);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-themes);
     }
     #titlebar-close:hover:-moz-lwtheme-brighttext {
-      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-outline-inverted);
+      list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-themes);
     }
         
     /* the 12px image renders a 10px icon, and the 10px upscaled gets rounded to 12.5, which
@@ -3474,25 +3469,17 @@ panel[dimmed="true"] {
     .titlebar-button:not(:hover) > .toolbarbutton-icon:-moz-window-inactive {
       opacity: 0.5;
     }
-
-    #titlebar-close:hover {
-      background-color: hsl(355, 86%, 49%);
-    }
-
-    #titlebar-close:hover:active {
-      background-color: hsl(355, 82%, 69%);
-    }
           
     /* dark persona/titlebar */
     .titlebar-button:-moz-lwtheme-brighttext:hover,
-    #main-window[darkwindowframe="true"] .titlebar-button:hover {
-      background-color: hsla(0, 0%, 100%, .22);
+    #main-window[darkwindowframe="true"] .titlebar-button:not(:-moz-lwtheme):hover {
+      background-color: hsla(0, 0%, 100%, .12);
       transition: background-color linear 100ms;
     }
 
     .titlebar-button:-moz-lwtheme-brighttext:hover:active,
-    #main-window[darkwindowframe="true"] .titlebar-button:hover:active	{
-      background-color: hsla(0, 0%, 100%, .32);
+    #main-window[darkwindowframe="true"] .titlebar-button:not(:-moz-lwtheme):hover:active	{
+      background-color: hsla(0, 0%, 100%, .22);
       transition: none;
     }
       
@@ -3554,6 +3541,33 @@ panel[dimmed="true"] {
 
     #appmenu-button {
       margin-bottom: -1px; 
+    }
+  }
+    
+  @media (-moz-os-version: windows-vista),
+         (-moz-os-version: windows-win7) {
+    /* Make the menu toolbar and tabs toolbar transparent in Aero+glass IIF tabs are on top and menu toolbar is autohidden */
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
+      background: transparent;
+      /* Give text an aura to make it more readable on glass */
+      text-shadow: 0 0 .5em white, 0 0 .5em white, 0 0 .5em white, 0 0 .5em white, 0 1px 0 rgba(255,255,255,.4);
+    }
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] #main-menubar:not(:-moz-lwtheme):not(:-moz-window-inactive) {
+      background-color: rgba(255,255,255,.5);
+      border-radius: 4px;
+    }
+  }
+  
+  @media (-moz-os-version: windows-win8),
+         (-moz-os-version: windows-win10) {
+    /* Make the menu toolbar and tabs toolbar transparent in Aero+glass IIF tabs are on top and menu toolbar is autohidden */
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"],
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"],
+    #main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] > #toolbar-menubar[autohide="true"] ~ #TabsToolbar {
+      background: transparent;
+      /* Use a light text color rather than fog on Win8/10 */
+      color: white;
     }
   }
     
