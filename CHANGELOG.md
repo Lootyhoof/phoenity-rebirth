@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.1.1
+- ensure Aero toolbar styling is applied consistently
+- improve about: page in preparation for Tycho (thanks Tobin)
+
 ### 1.1.0
 - titlebar colorisation for Windows 10
 - use dark window frame detection on Windows 8/10
