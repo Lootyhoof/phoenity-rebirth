@@ -9,16 +9,17 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>phoenity-rebirth@lootyhoof-pm</em:id>
-    <em:version>1.1.1</em:version>
+    <em:version>1.2.0</em:version>
     <em:name>Phoenity Rebirth</em:name>
     <em:description>Experience the Phoenity Aura theme, alive once again! Based on Phoenity Aura icons by cheeaun.</em:description>
     <em:creator>Lootyhoof</em:creator>
     <em:type>4</em:type>
     <em:internalName>phoenity-rebirth</em:internalName>
+    <em:skinnable>true</em:skinnable>
 
-	<em:contributor>Lim Chee Aun</em:contributor>
+    <em:contributor>Lim Chee Aun</em:contributor>
     <em:contributor>Jeremy Morton</em:contributor>
-	<em:contributor>Murphy</em:contributor>
+    <em:contributor>Murphy</em:contributor>
     <em:contributor>Graciliano (Win10 caption buttons)</em:contributor>
 
     <em:targetApplication>
