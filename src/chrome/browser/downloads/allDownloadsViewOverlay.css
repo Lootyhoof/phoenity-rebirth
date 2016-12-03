@@ -15,6 +15,7 @@
 
 .downloadTypeIcon {
   -moz-margin-end: 8px;
+  -moz-margin-start: 8px;
   /* explicitly size the icon, so size doesn't vary on hidpi systems */
   height: 32px;
   width: 32px;
