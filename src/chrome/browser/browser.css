@@ -2692,11 +2692,6 @@ panel[dimmed="true"] {
     font-style: italic;
   }
 
-  sidebarheader {
-    -moz-appearance: none !important;
-    background-image: linear-gradient(bottom, rgba(0,0,0,.05) 1px, transparent 50%);
-  }
-
   #minimize-button:-moz-locale-dir(rtl),
   #restore-button:-moz-locale-dir(rtl),
   #close-button:-moz-locale-dir(rtl) {
