@@ -15,9 +15,7 @@ toolbarbutton {
   -moz-box-align: center;
   -moz-box-pack: center;
   margin: 0;
-  border: 1px solid transparent;
   padding: 3px;
-  background-color: transparent;
   color: -moz-DialogText;
 }
 
@@ -31,7 +29,7 @@ toolbarbutton:-moz-lwtheme {
 }
 
 .toolbarbutton-text {
-  margin: 0 !important;
+  margin: 0 !important; /* !important for overriding global.css */
   text-align: center;
 }
 
@@ -40,13 +38,11 @@ toolbarbutton.tabbable {
 }
 
 toolbarbutton:hover {
-  border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
   color: -moz-buttonhovertext;
 }
 
 toolbarbutton:hover:active,
 toolbarbutton[open="true"] {
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
   padding-top: 4px;
   padding-bottom: 2px;
   -moz-padding-start: 4px;
@@ -58,7 +54,6 @@ toolbarbutton[disabled="true"],
 toolbarbutton[disabled="true"]:hover,
 toolbarbutton[disabled="true"]:hover:active,
 toolbarbutton[disabled="true"][open="true"] {
-  border-color: transparent;
   padding: 3px;
   color: GrayText;
 }
@@ -78,8 +73,6 @@ toolbarbutton:-moz-lwtheme:not(:hover):not([checked="true"]):not([open="true"]):
   -moz-appearance: toolbarbutton-dropdown !important;
   list-style-image: none;
   -moz-image-region: auto;
-  border: none !important;
-  background-color: transparent !important;
   padding: 0;
   margin: 0;
 }
@@ -103,7 +96,6 @@ toolbarbutton[type="menu-button"][open="true"],
 toolbarbutton[type="menu-button"][disabled="true"],
 toolbarbutton[type="menu-button"][disabled="true"]:hover,
 toolbarbutton[type="menu-button"][disabled="true"]:hover:active {
-  border-style: none;
   padding: 0 !important;
 }
 
@@ -150,9 +142,7 @@ toolbarbutton[type="menu-button"][disabled="true"]:hover:active {
 /* .......... dropmarker .......... */
 
 .toolbarbutton-menubutton-dropmarker {
-  border: none !important;
-  background-color: transparent !important;
-  padding: 3px;
+  margin: 0 3px;
   -moz-appearance: toolbarbutton-dropdown !important;
   list-style-image: none;
   -moz-image-region: auto;
