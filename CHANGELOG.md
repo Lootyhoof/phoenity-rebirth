@@ -1,5 +1,27 @@
 # Changelog
 
+### 2.0.0
+- refactor toolbarbutton styling
+- refactor tab styling
+- use HiDPI-capable toolbar icons
+- add about:home styling for Home Styler
+- use a clearer image document favicon
+- unify platform stylings
+- add basic OS X support
+- add CSS variables for increased customization
+- add private browsing indicators in appmenu and menubar
+- sync devtools styling with default
+- improve sidebar appearance on Windows
+- fix appmenu/caption button margins when tabs are in the titlebar
+- improve tab appearance in tabs in titlebar mode
+- add missing HTTPS icon for devtools network panel
+- use new icons for mixed content blocking
+- ensure that panel icons for mixed content blocking and pointer lock are shown
+- fix notification icon selectors
+- PM27.5: draw a background on Win10 for better accent color detection
+- remove Social API components
+- major cleanup of stylings
+
 ### 1.4.0
 - sync about:support styling with default
 - sync about:permissions styling with default
