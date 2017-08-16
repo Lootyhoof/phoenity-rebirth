@@ -1,5 +1,8 @@
 # Changelog
 
+### 2.0.1
+- restore native toolbarbutton styling
+
 ### 2.0.0
 - refactor toolbarbutton styling
 - refactor tab styling
