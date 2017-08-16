@@ -474,13 +474,11 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button]) {
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
 #nav-bar .toolbarbutton-1 {
-  -moz-appearance: none;
   border: none;
   padding: 5px;
 }
 
 #nav-bar .toolbarbutton-1[type="menu-button"] {
-  -moz-appearance: none;
   padding: 0;
   background: none !important;
   border: none !important;
