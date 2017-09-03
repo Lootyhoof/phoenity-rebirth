@@ -1,5 +1,11 @@
 # Changelog
 
+### 2.0.2
+- fix search icons in right-to-left locales
+- fix popup notification icons
+- Linux: remove double border
+- Linux: add private browsing indicator to tab bar
+
 ### 2.0.1
 - restore native toolbarbutton styling
 
