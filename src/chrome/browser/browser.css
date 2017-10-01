@@ -27,6 +27,9 @@
   --tab-border-radius: 2px;
   --tab-selected-background: var(--dialog-color) url("chrome://browser/skin/tabbrowser/tab-active-bkgnd.png") repeat-x;
   
+  --toolbarbutton-large-image: url("chrome://browser/skin/Toolbar-large.png");
+  --toolbarbutton-small-image: url("chrome://browser/skin/Toolbar-small.png");
+  
   --window-text-color: currentColor;
 }
 
@@ -435,7 +438,7 @@ menuitem.bookmark-item {
 /* ::::: primary toolbar buttons ::::: */
 
 .toolbarbutton-1 {
-  list-style-image: url("chrome://browser/skin/Toolbar-large.png");
+  list-style-image: var(--toolbarbutton-large-image);
 }
 
 toolbar[mode=full] .toolbarbutton-1:not([type=menu-button]) {
@@ -605,7 +608,7 @@ toolbar[brighttext] #tabview-button {
 }
 
 #bookmarks-menu-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar-large.png") !important;
+  list-style-image: var(--toolbarbutton-large-image) !important;
 }
 
 /* print button */
@@ -695,7 +698,7 @@ toolbar[iconsize="small"] :-moz-any(#back-button, #forward-button, #stop-button,
 toolbar[iconsize="small"] .toolbarbutton-1 {
   -moz-box-orient: vertical;
   min-width: 0;
-  list-style-image: url("chrome://browser/skin/Toolbar-small.png");
+  list-style-image: var(--toolbarbutton-small-image);
 }
 
 toolbar[iconsize="small"] .toolbarbutton-1[type="menu-button"] {
@@ -729,7 +732,7 @@ toolbar[iconsize="small"] #reload-button {
 /* home button */
 
 #home-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar-small.png");
+  list-style-image: var(--toolbarbutton-small-image);
 }
 toolbar[iconsize="small"] #home-button,
 #home-button.bookmark-item {
@@ -761,7 +764,7 @@ toolbar[iconsize="small"] #bookmarks-menu-button {
 }
 
 toolbar[iconsize="small"] #bookmarks-menu-button.bookmark-item {
-  list-style-image: url("chrome://browser/skin/Toolbar-small.png") !important;
+  list-style-image: var(--toolbarbutton-small-image) !important;
 }
 
 toolbar[iconsize="small"] #bookmarks-menu-button.toolbarbutton-1 {
@@ -2245,7 +2248,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 }
 
 #download-monitor {
-  list-style-image: url("chrome://browser/skin/Toolbar-large.png");
+  list-style-image: var(--toolbarbutton-large-image);
   -moz-image-region: rect(0, 108px, 18px, 90px);
 }
 

@@ -244,13 +244,13 @@ toolbar[iconsize="large"] > #downloads-indicator > #downloads-indicator-anchor {
 /*** Main indicator icon ***/
 
 toolbar[iconsize="small"] > #downloads-indicator > #downloads-indicator-anchor > #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
+  background: -moz-image-rect(var(--toolbarbutton-small-image),
                                 0, 192, 32, 160) center no-repeat;
   background-size: 16px;
 }
 
 toolbar[iconsize="large"] > #downloads-indicator > #downloads-indicator-anchor > #downloads-indicator-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"),
+  background: -moz-image-rect(var(--toolbarbutton-large-image),
                                 0, 288, 48, 240) center no-repeat;
   background-size: 24px;
 }
@@ -267,7 +267,7 @@ toolbar[iconsize="large"] > #downloads-indicator[attention] > #downloads-indicat
    equivalent to -moz-any([progress], [paused]). */
 
 #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
+  background: -moz-image-rect(var(--toolbarbutton-small-image),
                                 0, 192, 32, 160) center no-repeat;
   background-size: 12px;
 }
