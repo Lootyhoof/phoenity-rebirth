@@ -610,7 +610,7 @@ toolbar[brighttext] #tabview-button {
 /* toolbar new tab button */
 
 #new-tab-button {
-  -moz-image-region: rect(0px 480px 24px 216px);
+  -moz-image-region: rect(0px 480px 48px 432px);
 }
 
 /* new window button */
