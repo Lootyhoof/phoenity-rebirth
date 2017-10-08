@@ -1,5 +1,15 @@
 # Changelog
 
+### 2.0.3
+- set minimum supported version to Pale Moon 27.5.0
+- fix statusbar progressmeter custom colors
+- don't use filters on extension icons
+- improve statusbar appearance
+- fix new tab icon mapping when not in tab bar
+- Win10: use white window backgrounds on active windows with no accent color applied
+- Linux: redesign appmenu button
+- minor cleanup
+
 ### 2.0.2
 - fix search icons in right-to-left locales
 - fix popup notification icons
