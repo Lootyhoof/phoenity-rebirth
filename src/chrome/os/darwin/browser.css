@@ -1,5 +1,25 @@
+/* ensure titlebar on privacy windows is of correct size */
 #titlebar {
+  height: 22px;
+}
+
+/* ensure extra titlebar doesn't appear on normal (e.g. non-privacy) windows */
+#main-window:not([privatebrowsingmode=temporary]):not(:-moz-lwtheme) > #titlebar > #titlebar-content > #titlebar-buttonbox-container,
+#main-window:not([drawintitlebar=true]):not(:-moz-lwtheme) > #titlebar {
   display: none;
+}
+
+#titlebar-spacer {
+  display: none;
+}
+
+#titlebar-buttonbox-container {
+  margin-left: 7px;
+  margin-top: 3px;
+}
+
+#main-window:-moz-lwtheme > #titlebar {
+  -moz-appearance: none !important;
 }
 
 .tabbrowser-tab[selected="true"]:not(:-moz-lwtheme) > * > * > .tab-text {
@@ -45,6 +65,12 @@
   margin-top: 2px !important;
 }
 
+/* Searchbar fix */
+
+.searchbar-textbox:not(:-moz-lwtheme) {
+  border: 1px solid var(--shadow-color) !important;
+}
+
 /* ::::: bookmark buttons ::::: */
 
 toolbarbutton.bookmark-item {
@@ -54,6 +80,11 @@ toolbarbutton.bookmark-item {
   border-radius: 10000px;
   padding: 1px 8px;
   margin: 0 0 1px;
+}
+
+toolbarbutton.bookmark-item:-moz-lwtheme {
+  color: inherit;
+  text-shadow: inherit;
 }
 
 .bookmark-item > .toolbarbutton-text {
@@ -91,4 +122,19 @@ toolbarbutton.bookmark-item > menupopup {
 .bookmark-item > .toolbarbutton-icon[label]:not([label=""]),
 .bookmark-item > .toolbarbutton-icon[type="menu"] {
   -moz-margin-end: 5px;
+}
+
+/* Appcontent fix/hack */
+
+#appcontent {
+  margin: 0 -5px !important;
+}
+
+/* Private browsing indicator */
+
+#main-window[privatebrowsingmode=temporary] #TabsToolbar::before {
+  display: -moz-box;
+  content: "";
+  background: url("chrome://browser/skin/Privacy-16.png") center no-repeat;
+  width: 30px;
 }
