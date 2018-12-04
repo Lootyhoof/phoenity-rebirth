@@ -1671,6 +1671,56 @@ tabpanels {
   padding-top: 1px;
 }
 
+/* Tab icon overlay */
+
+.tab-icon-overlay {
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-inline-start: -15px;
+  margin-inline-end: -1px;
+  position: relative;
+}
+
+/* Tab sound indicator */
+
+.tab-icon-sound {
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+}
+
+.allTabs-endimage,
+.tab-icon-sound[soundplaying],
+.tab-icon-overlay[soundplaying] {
+  list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio.png");
+}
+
+.tab-icon-sound[muted],
+.tab-icon-overlay[muted] {
+  list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted.png");
+}
+
+.allTabs-endimage[soundplaying]:hover,
+.tab-icon-sound[soundplaying]:hover,
+.tab-icon-overlay[soundplaying]:hover {
+  filter: brightness(.95);
+}
+
+.allTabs-endimage[soundplaying]:hover:active,
+.tab-icon-sound[soundplaying]:hover:active,
+.tab-icon-overlay[soundplaying]:hover:active {
+  filter: brightness(.75);
+}
+
+.tabbrowser-tab:not([selected]) .tab-icon-sound:not(:hover):not(:active),
+.tabbrowser-tab:not([selected]) .tab-icon-overlay:not(:hover):not(:active) {
+  filter: grayscale(100%);
+  opacity: 0.25;
+}
+
 /* Tab scrollbox arrow, tabstrip new tab and all-tabs buttons */
 .tabbrowser-arrowscrollbox > .scrollbutton-up,
 .tabbrowser-arrowscrollbox > .scrollbutton-down,

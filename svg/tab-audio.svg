@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" enable-background="new 0 0 12 12" version="1.1" viewBox="0 0 12 12" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs><mask id="c"><rect x="-59.528" y="-84.189" width="714.33" height="1010.3" fill="url(#d)"/></mask><linearGradient id="d" x2="0" y2="5.999" gradientTransform="translate(479.32 617.32)" gradientUnits="userSpaceOnUse"><stop stop-color="#333" offset="0"/><stop stop-color="#fff" offset="1"/></linearGradient></defs>
+<g transform="matrix(1 0 0 -1 -467.32 -218.57)">
+	<g transform="translate(0 -841.89)">
+			<path d="m468.07 621.07c0 0.707 0.793 1.5 1.5 1.5h7.5c0.707 0 1.5-0.793 1.5-1.5v-7.5c0-0.707-0.793-1.5-1.5-1.5h-7.5c-0.707 0-1.5 0.793-1.5 1.5z" fill="#1b30c1"/>
+				<linearGradient id="b" x1="750.98" x2="750.98" y1="194.36" y2="182.36" gradientTransform="translate(-277.66 428.96)" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#fff" offset="0"/>
+				<stop stop-color="#2A73FF" offset=".501"/>
+				<stop stop-color="#fff" offset="1"/>
+			</linearGradient>
+			<path d="m469.57 612.82c-0.287 0-0.75 0.459-0.75 0.75v7.5c0 0.286 0.459 0.75 0.75 0.75h7.5c0.285 0 0.75-0.46 0.75-0.75v-7.5c0-0.287-0.461-0.75-0.75-0.75z" fill="url(#b)"/>
+				<path d="m475.74 621.03-2.426-1.729h-1.027c-0.951 0-1.723-0.642-1.723-1.433v-1.058c0-0.792 0.771-1.432 1.723-1.432h1.027l2.49-1.775c0.066-0.049 0.168-0.041 0.223 0.012 0.024 0.025 0.037 0.053 0.037 0.088v7.204c0 0.09-0.088 0.164-0.195 0.164-0.047-1e-3 -0.092-0.015-0.129-0.041z" fill="#fff" stroke="#1b30c1" stroke-miterlimit="10"/>
+			<defs>
+				<filter id="e" x="468.82" y="-621.82" width="9" height="4.5" filterUnits="userSpaceOnUse">
+					<feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask x="468.818" y="-621.819" width="9" height="4.5" maskUnits="userSpaceOnUse">
+					<linearGradient id="a" x1="575.3" x2="575.3" y1="194.36" y2="200.36" gradientTransform="translate(-277.66 422.96)" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#333" offset="0"/>
+					<stop stop-color="#fff" offset="1"/>
+				</linearGradient>
+					<rect x="-59.528" y="926.08" width="714.33" height="0" fill="url(#a)" filter="url(#e)"/>
+			</mask>
+			<path d="m467.32 623.32h12v-12h-12z" fill="none"/>
+		<path transform="translate(0 -7.0577e-5)" d="m468.82 617.32v3.75c0 0.286 0.459 0.75 0.75 0.75h7.5c0.286 0 0.75-0.46 0.75-0.75v-3.75z" fill="#fff" fill-rule="evenodd" mask="url(#c)" stroke-miterlimit="79.84"/>
+	</g>
+</g>
+</svg>
