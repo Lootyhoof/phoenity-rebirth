@@ -1,5 +1,5 @@
 # Phoenity Rebirth
-![Preview](http://i64.tinypic.com/x5w4sw.png)
+![Preview](https://i.imgur.com/HDSOOcx.png)
 
 Firefox 3-alike (Vista/Win7 style) theme for Pale Moon using the [Phoenity Aura](https://github.com/cheeaun/phoenity-icons) icons. Based on [Aeromoon](https://github.com/Lootyhoof/aeromoon) with additions from [Qute Legacy](https://github.com/Lootyhoof/qutelegacy).
 
