@@ -2,10 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
-
 @import url("chrome://global/skin/inContentUI.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
@@ -621,6 +617,13 @@
   background-image: url("chrome://mozapps/skin/extensions/stripes-warning.png"),
                     linear-gradient(rgba(255, 255, 0, 0.04),
                                     rgba(255, 255, 0, 0));
+  background-repeat: repeat-x;
+}
+
+.addon-view[notification="warning"][native="false"] {
+  background-image: url("chrome://mozapps/skin/extensions/stripes-compatibility.png"),
+                    linear-gradient(rgba(255, 128, 0, 0.04),
+                                    rgba(255, 128, 0, 0));
   background-repeat: repeat-x;
 }
 
