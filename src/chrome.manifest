@@ -4,8 +4,8 @@ skin	communicator	phoenity-rebirth	chrome/communicator/
 skin	global		phoenity-rebirth	chrome/global/
 skin	mozapps		phoenity-rebirth	chrome/mozapps/
 
+skin	os			phoenity-rebirth	chrome/os/linux/
 skin	os			phoenity-rebirth	chrome/os/winnt/		os=WINNT	
-skin	os			phoenity-rebirth	chrome/os/linux/		os=Linux
 skin	os			phoenity-rebirth	chrome/os/darwin/		os=Darwin
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
