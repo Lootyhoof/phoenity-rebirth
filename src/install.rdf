@@ -9,14 +9,13 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>phoenity-rebirth@lootyhoof-pm</em:id>
-    <em:version>2.7.0</em:version>
+    <em:version>2.8.0</em:version>
     <em:name>Phoenity Rebirth</em:name>
     <em:description>Experience the Phoenity Aura theme, alive once again! Based on Phoenity Aura icons by cheeaun.</em:description>
     <em:creator>Lootyhoof</em:creator>
     <em:type>4</em:type>
     <em:internalName>phoenity-rebirth</em:internalName>
     <em:skinnable>true</em:skinnable>
-    <em:updateURL>https://raw.githubusercontent.com/Lootyhoof/phoenity-rebirth/master/update.xml</em:updateURL>
 
     <em:contributor>Lim Chee Aun</em:contributor>
     <em:contributor>Jeremy Morton</em:contributor>
